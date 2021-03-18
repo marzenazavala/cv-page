@@ -49,24 +49,27 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
+                      {url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className={`${url ? 'cta-btn cta-btn--hero' : 'cta-btn text-color-main'}`}
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
+                      {repo ? (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`${url ? 'cta-btn text-color-main' : 'cta-btn cta-btn--hero'}`}
                           href={repo}
                         >
                           Source Code
                         </a>
+                      ) : (
+                        <p className="cta-btn cta-btn--hero">Source Code is a private repo</p>
                       )}
                     </div>
                   </Fade>
