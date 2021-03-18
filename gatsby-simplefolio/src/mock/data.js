@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'me-img.jpg',
   paragraphOne:
-    'Self-motivated Front End Web Developer with over 1 year of experience working on multiple projects. Passionate and hardworking with penchant for meeting deadlines.',
+    'Self-motivated FrontEnd Web Developer with over 1 year of experience working on multiple projects. Passionate and hardworking with penchant for meeting deadlines.',
   paragraphTwo:
     "Proven experience developing consumer-focused web sites using React and Redux. Experience building products for desktop responding to challenges by designing and developing solutions and building web applications aligned to customer's services.",
   paragraphThree:
@@ -49,15 +49,16 @@ export const projectsData = [
     id: nanoid(),
     img: 'project5.png',
     title: 'TrustTech App',
-    info: 'Experience sharing application to earn money by organizing online events',
-    info2: 'Tech stack: React, Redux, Sass',
+    info:
+      'Application to connect health institution and make requests for transplants and extra medical staff in the case of emergency',
+    info2: 'Tech stack: React, Redux, Sass, reactstap, REST API',
   },
   {
     id: nanoid(),
     img: 'project6.png',
     title: 'Health+ App',
     info: 'Application to share information about health',
-    info2: 'Tech stack: React, Redux, Sass',
+    info2: 'Tech stack: React, Redux, Sass, reactstap, REST API',
   },
   {
     id: nanoid(),
